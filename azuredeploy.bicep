@@ -84,19 +84,19 @@ var acmebotAppSettings = [
     value: 'dotnet'
   }
   {
-    name: 'Acmebot:Contacts'
+    name: 'Acmebot--Contacts'
     value: mailAddress
   }
   {
-    name: 'Acmebot:Endpoint'
+    name: 'Acmebot--Endpoint'
     value: acmeEndpoint
   }
   {
-    name: 'Acmebot:VaultBaseUrl'
+    name: 'Acmebot--VaultBaseUrl'
     value: (createWithKeyVault ? 'https://${keyVaultName}${environment().suffixes.keyvaultDns}' : keyVaultBaseUrl)
   }
   {
-    name: 'Acmebot:Environment'
+    name: 'Acmebot--Environment'
     value: environment().name
   }
 ]
